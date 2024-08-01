@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav> 
+        <ol>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="page2.html"> Pagina 2</a></li>
+        </ol>
+    </nav>
+    <header>
+        <h1>KIKI</h1>
+        <main>
+            <h3> Formulario 1</h3>
+        <form action="" method="get">
+            <label for="name"> Nombre</label>
+            <input type="text" name="fname">
+            <label for="name">Apellido</label>
+            <input type="text" name="lname">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <input type="submit" value="Suscribir">
+
+        </form>
+        <h3> Formulario 2</h3>
+        <form action="" method="get">
+            <fieldset>
+                <legend> ¿Cual prefieres?</legend>
+                <label><input type="radio" name="radio" value="html"> HTML</label>
+                <label><input type="radio" name="radio" value="css"> CSS</label>
+                <label><input type="radio" name="radio" value="js"> Java Script </label>
+                <button>Save</button>
+            </fieldset>
+        </form>
+        <h3> Formulario 3</h3>
+        <form action="">
+                <label for="navegadores">¿Què navegador usas?</label>
+                <input list="navegadores" name="navegadores" placeholder="Navegador">
+                    <datalist id="navegadores">
+                        <optgroup>
+                            <option value="edge">
+                            <option value="Chrome">
+                            <option value="Safari">
+                            <option value="Safari">   
+                        </optgroup>
+                    </datalist>
+                    <input type="button" value="submit">
+                    <label for="file"> FILE </label>
+                    <progress value="32" max="100"> 32 % </progress>
+        </form>
+        </main>
+            
+        <!-- En Action deberia tener una liga a un PHP por ejemplo (ni puta idea de que sea eso, segun san google es algo de programaciòn,o una wea asi) --> 
+        <aside>
+            <h3> VOCALOIDS CONOCIDOS</h3>
+            <ol>
+                <li> <a href="·"> Hatsune Miku</a></li>
+                <li> <a href="·"> Home</a></li>
+                <li> <a href="·"> Home</a></li>
+            </ol>
+        </aside>
+    </header>
+    <footer>  Keyla D. López </footer>
+</body>
+</html>

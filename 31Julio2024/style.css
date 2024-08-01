@@ -1,0 +1,16 @@
+/*css document, porfin carajoooo*/
+main{
+    padding: 3rem;
+    border: 10px rgb(8, 34, 232) solid;
+    margin: 5rem;
+    border-radius: 3px;
+    background-color: rgb(215, 255, 242);
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    margin: 30px;
+}
+.align{
+    text-align: center;
+}
