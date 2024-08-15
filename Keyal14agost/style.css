@@ -1,0 +1,79 @@
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+h1{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header{
+    background-color: rgba(255, 254, 202, 0.423);
+}
+main{
+    background-color: rgba(102, 244, 86, 0.423);
+}
+aside{
+    background-color: rgba(99, 163, 25, 0.604);
+}
+footer{
+    background-color: rgba(162, 244, 86, 0.632);
+}
+/*  Diseño web tablet*/
+@media (min-width:600px) {
+    body{
+           background: rgba(101, 227, 208, 0.438);
+       }
+    } 
+
+@media (max-width:600px) {
+    body{
+        background: rgba(136, 255, 0, 0.357);
+    }
+} 
+
+/*  Diseño web moviñ*/
+@media (max-width: 600px) {
+    /*  Diseño web moviñbody{
+        background: rgba(0, 0, 255, 0.438);
+    }*/
+    #container{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 1rem;
+    }
+}
+
+@media (min-width:600px) {
+    /* body{
+        background: rgba(0, 0, 255, 0.438);
+    } */
+    #container{
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 1rem;
+        grid-template-areas: 
+        "cabeza cabeza cabeza"
+        "principal principal lado"
+        "pie pie pie"
+        ;
+    }
+    header{
+        grid-area: cabeza;
+    }
+    main{
+        grid-area: principal;
+    }
+    aside{
+        grid-area: lado;
+    }
+    footer{
+        grid-area: pie;
+    }
+}
+
+
